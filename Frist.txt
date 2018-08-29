@@ -1,0 +1,39 @@
+// 延迟6秒的Handler
+new Handler().postDelayed(new Runnable() {
+     			public void run() {
+     		
+     				  if(decode.getSdkOpenNumber()[1])
+     			        {
+     			        	//showChaPing();
+     			        }else
+     			        {
+     			        	  GDTbanner(mActivity);
+     			        }
+     			   
+
+     			}
+}, 6000); 
+//构造一个handler
+public static Handler handler =  new Handler() {  
+    	@Override  
+    	public void handleMessage(Message msg) {  
+    		
+    		
+    		switch (msg.what) {
+				case 0://没购买过道具
+					Log.e("sbsbsbmili", "daoju==" + 0000);
+				break;
+				case 1://购买过道具
+					Log.e("sbsbsbmili", "daoju==" + 1111);
+					
+				break;
+    		
+    		}
+    		
+    	
+    	}
+};
+//使用handler
+{
+	handler.sendEmptyMessage(num);
+}
